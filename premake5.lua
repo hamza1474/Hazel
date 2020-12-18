@@ -18,6 +18,9 @@ project "Hazel"
 	targetdir ("Binaries/" .. outputdir .. "/%{prj.name}")
 	objdir ("Intermediate/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "hzpch.h"
+	pchsource "Hazel/Source/hzpch.cpp"
+
 	files
 	{
 		"%{prj.name}/Source/**.h",
@@ -74,8 +77,8 @@ project "Sandbox"
 	
 	includedirs
 	{
-		"Hazel/vendor/spdlog/include",
-		"Hazel/Source"
+		"Hazel/Source",
+		"Hazel/vendor/spdlog/include"
 	}
 
 	links

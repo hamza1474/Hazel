@@ -19,15 +19,22 @@
     <ClInclude Include="Source\Hazel\EntryPoint.h">
       <Filter>Hazel</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Hazel\Log.h">
-      <Filter>Hazel</Filter>
+    <ClInclude Include="Source\Hazel\Events\ApplicationEvent.h">
+      <Filter>Hazel\Events</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Hazel\Events\KeyEvent.h" />
     <ClInclude Include="Source\Hazel\Events\Event.h">
       <Filter>Hazel\Events</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Hazel\Events\MouseEvent.h" />
-    <ClInclude Include="Source\Hazel\Events\ApplicationEvent.h" />
+    <ClInclude Include="Source\Hazel\Events\KeyEvent.h">
+      <Filter>Hazel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Hazel\Events\MouseEvent.h">
+      <Filter>Hazel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Hazel\Log.h">
+      <Filter>Hazel</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\hzpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Hazel\Application.cpp">
@@ -36,5 +43,6 @@
     <ClCompile Include="Source\Hazel\Log.cpp">
       <Filter>Hazel</Filter>
     </ClCompile>
+    <ClCompile Include="Source\hzpch.cpp" />
   </ItemGroup>
 </Project>
