@@ -9,3 +9,5 @@
 #else
 	#error Unsupported Operating System !!!
 #endif
+
+#define BIT(x) (1 << x)
